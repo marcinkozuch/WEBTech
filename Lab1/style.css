@@ -1,0 +1,137 @@
+
+header{
+  width: 100%;
+}
+
+#logo {
+  float:left;
+  width:20%;
+}
+
+#tytul--strony {
+  float:left;
+  width:25%;
+  text-align:center;
+  font-size: 24px;
+  line-height: 240px;
+}
+
+nav {
+    clear: both;
+    background-color: bisque;
+    width:100%;
+    border-width: 1px;
+    border-style: solid;   
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;  
+  }
+
+nav li {
+    display: inline;
+    margin: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  width: 100px;
+  padding: 15px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif; 
+  margin: 100px;
+  transition: 0.3s;
+}
+
+#content-news-img {
+  float:left;
+  width: 48%;
+  margin-top: 10px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+
+#content-news-text {
+  float:left;
+  width: 48%;
+  margin-top: 10px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+#content-news-text ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0px;
+}
+
+#content-news-text ul li {
+  display: block;
+  margin: 20px;
+}
+
+
+#weather {
+  clear: both;
+  border-width: 1px;
+  border-style: solid;
+}   
+
+
+
+      section ul {
+        list-style: none;
+        padding: 10px;
+        margin: 0px;
+        
+      }
+
+      section ul li {
+        display: inline;
+        margin: 20px;
+        
+      }
+
+    
+
+
+
+      .weather--day {
+        float:left;
+      }
+
+      .weather--logo {
+        clear:both;
+      }
+
+      .weather--temp {
+       clear: both;
+      }
+
+      hr {
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: solid;
+        border-width: 1px;
+      }
+
+footer ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0px;
+  
+}
+
+footer ul li {
+  display: inline;
+  margin: 20px;
+  
+}
