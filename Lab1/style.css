@@ -1,19 +1,26 @@
+body {
+	display: block;
+  font-family: Arial, Helvetica, sans-serif; 
+}
 
 header{
   width: 100%;
+  display: block;
+	top: 10px;
 }
 
-#logo {
+header img {
+  display: inline-block;
   float:left;
   width:20%;
 }
 
-#tytul--strony {
+header h1 {
   float:left;
-  width:25%;
+  width:30%;
   text-align:center;
-  font-size: 24px;
-  line-height: 240px;
+  font-size: 40px;
+  line-height: 200px;
 }
 
 nav {
@@ -28,100 +35,63 @@ nav ul {
     list-style: none;
     text-align: center;
     padding: 10px;
-    margin: 0px;  
   }
 
 nav li {
     display: inline;
-    margin: 20px;
+    margin: 0px;
 }
 
 nav a {
   text-decoration: none;
   color: black;
-  width: 100px;
-  padding: 15px;
+  width: 100%;
+  padding: 10px;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif; 
   margin: 100px;
   transition: 0.3s;
 }
 
+#content-news {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+}
+
 #content-news-img {
-  float:left;
-  width: 48%;
-  margin-top: 10px;
+  width: 90%;
+  background-image: url('images/artykul-img.jpg');
+  margin: 10px 10px 10px 10px;
   border-width: 1px;
   border-style: solid;
 }
-
 
 #content-news-text {
-  float:left;
-  width: 48%;
-  margin-top: 10px;
+  width: 97%;
+  margin: 10px 10px 10px 10px;
   border-width: 1px;
   border-style: solid;
+  background-color:mintcream;
 }
-
-#content-news-text ul {
-  list-style: none;
-  padding: 10px;
-  margin: 0px;
-}
-
-#content-news-text ul li {
-  display: block;
-  margin: 20px;
-}
-
 
 #weather {
   clear: both;
   border-width: 1px;
   border-style: solid;
+  width:100%;
 }   
 
 
-
-      section ul {
-        list-style: none;
-        padding: 10px;
-        margin: 0px;
-        
-      }
-
-      section ul li {
-        display: inline;
-        margin: 20px;
-        
-      }
-
-    
-
-
-
-      .weather--day {
-        float:left;
-      }
-
-      .weather--logo {
-        clear:both;
-      }
-
-      .weather--temp {
-       clear: both;
-      }
-
-      hr {
-        display: block;
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
-        margin-left: auto;
-        margin-right: auto;
-        border-style: solid;
-        border-width: 1px;
-      }
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 1px;
+}
 
 footer ul {
   list-style: none;
