@@ -68,11 +68,25 @@ nav a {
 }
 
 #content-news-text {
-  width: 97%;
+  width: 98%;
   margin: 10px 10px 10px 10px;
+  text-decoration: none;
   border-width: 1px;
   border-style: solid;
   background-color:mintcream;
+}
+
+#content-news-text h2 {
+  margin-left: 10px;
+}
+
+#content-news-text a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#content-news-text li {
+  list-style-type: none;
 }
 
 #weather {
@@ -80,8 +94,25 @@ nav a {
   border-width: 1px;
   border-style: solid;
   width:100%;
-}   
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto ;
+  justify-content: space-around;
+}  
 
+#weather-main-icon {
+  width: 97%;
+  margin:0px;
+}
+
+#weather-info {
+  margin-top:10px;
+  display: inline-grid;
+}
+
+.weather-daily {
+  margin-top:10px;
+  display: inline-grid;
+}
 
 hr {
     display: block;
@@ -96,12 +127,15 @@ hr {
 footer ul {
   list-style: none;
   padding: 10px;
-  margin: 0px;
-  
+  margin: 0px; 
 }
 
 footer ul li {
   display: inline;
   margin: 20px;
-  
 }
+
+footer a {
+  text-decoration: none;
+}
+
