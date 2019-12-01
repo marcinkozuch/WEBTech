@@ -25,7 +25,7 @@ app.get("/users", function(req, res) {
     } else {
       var data = JSON.parse(body);
       res.render("users", {
-        picData: data
+        userData: data
       });
     }
   });
