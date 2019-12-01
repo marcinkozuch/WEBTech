@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Searching app</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css" >
+  </head>
+  <body>
+    <div class="container">
+      <h1>Search app</h1>
+
+      <form action="/users" method="GET">
+      <div>
+        <label for="input1">Search repo:</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="user name"
+          name="searchterm"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">
+        Search
+      </button>
+      </form>
+
+      <div class="row" >
+        <% if (resData.items) { %> <h1> Found result:</h1> <% } %> 
+        <% for(var i = 0;i <resData.items.length;i++){ %>
+      <div>
+      <div class="elements">
+      <p>
+        Login: <%= resData.items[i].login %>
+        <br/> 
+        Id: <%= resData.items[i].id %>
+        <br/> 
+        Node Id: <%= resData.items[i].node_id %>
+        <br/> 
+        Avatar url: <%= resData.items[i].avatar_url %>
+        <br/> 
+        Gravatar Id: <%= resData.items[i].gravatar_id %>
+        <br/> 
+        html_url: <%= resData.items[i].url %>
+        <br/> 
+        Url: <%= resData.items[i].url %>
+        <br/> 
+        Followers url: <%= resData.items[i].followers_url %>
+        <br/> 
+        following_url: <%= resData.items[i].following_url %>
+        <br/> 
+        gists_url: <%= resData.items[i].gists_url %>
+        <br/> 
+        starred_url: <%= resData.items[i].starred_url %>
+        <br/> 
+        subscriptions_url: <%= resData.items[i].subscriptions_url %>
+        <br/>
+        organizations_url: <%= resData.items[i].organizations_url %>
+        <br/>
+        repos_url: <%= resData.items[i].repos_url %>
+        <br/> 
+        events_url: <%= resData.items[i].events_url %>
+        <br/>
+        received_events_url: <%= resData.items[i].received_events_url %>
+        <br/>
+        type: <%= resData.items[i].type %>
+        <br/>
+        site_admin: <%= resData.items[i].site_admin %>
+        <br/>
+        score: <%= resData.items[i].score %>
+        <br/>
+      </p>
+      </div>
+      <% } %>
+    </div>
+  </body>
+</html>
