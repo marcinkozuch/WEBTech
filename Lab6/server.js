@@ -7,14 +7,14 @@ app.use(express.static("views"));
 
 app.set("view engine", "ejs");
 
-app.get("/users", function(req, res) {
+app.get("/", function(req, res) {
   req.headers["User-Agent"] = "Awesome-Octocat-App";
   //console.log("headers:::", req.headers);
 
   var searchTerm = req.query.searchterm;
 
   const options = {
-    url: "https://api.github.com/search/users?q=tom",
+    url: "https://api.github.com/search/users?q=" + searchTerm,
     headers: {
       "User-Agent": "Awesome-Octocat-App"
     }
